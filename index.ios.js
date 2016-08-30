@@ -8,7 +8,7 @@ import {
 
 import HomeComponent from './HomeComponent';
 
-class theBreweryNew extends Component {
+class theBrewery extends Component {
 
 	renderScene(route, navigator) {
 		const Component = route.component;
@@ -33,4 +33,4 @@ const styles = StyleSheet.create({
 	}
 });
 
-AppRegistry.registerComponent('theBreweryNew', _ => theBreweryNew);
+AppRegistry.registerComponent('theBrewery', _ => theBrewery);
