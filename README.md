@@ -21,7 +21,7 @@ What this covers:
 4. API calls using fetch.
 5. Dev process. Hot reloading. What to do when things go wrong.
 6. Bundling, installing on device.
-*7. Disabling ATS for HTTP calls (http://stackoverflow.com/questions/30731785/how-do-i-load-an-http-url-with-app-transport-security-enabled-in-ios-9)*
+7. *Disabling ATS for HTTP calls (http://stackoverflow.com/questions/30731785/how-do-i-load-an-http-url-with-app-transport-security-enabled-in-ios-9)*
 
 # Steps
 ----
