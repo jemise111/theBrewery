@@ -1,15 +1,14 @@
-import React, {
+import React, { Component } from 'react';
+
+import {
 	AppRegistry,
-	Component,
 	Navigator,
-	StyleSheet,
-	Text,
-	View
+	StyleSheet
 } from 'react-native';
 
 import HomeComponent from './HomeComponent';
 
-class theBrewery extends Component {
+class theBreweryNew extends Component {
 
 	renderScene(route, navigator) {
 		const Component = route.component;
@@ -34,4 +33,4 @@ const styles = StyleSheet.create({
 	}
 });
 
-AppRegistry.registerComponent('theBrewery', () => theBrewery);
+AppRegistry.registerComponent('theBreweryNew', _ => theBreweryNew);

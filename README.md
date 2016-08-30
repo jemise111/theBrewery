@@ -21,6 +21,7 @@ What this covers:
 4. API calls using fetch.
 5. Dev process. Hot reloading. What to do when things go wrong.
 6. Bundling, installing on device.
+*7. Disabling ATS for HTTP calls (http://stackoverflow.com/questions/30731785/how-do-i-load-an-http-url-with-app-transport-security-enabled-in-ios-9)*
 
 # Steps
 ----
@@ -56,11 +57,9 @@ Reload -> cmd + r
  * When we install on the phone there is no server so we bundle up the JS and app gets it from an internal file.
  * Run
 ```
-$ react-native bundle --dev false --platform ios --entry-file index.ios.js --bundle-output main.jsbundle --minify
+$ react-native bundle --dev false --platform ios --entry-file index.ios.js --bundle-output main.jsbundle
 ```
  * Open finder and drag this main.jsbundle file into XCode project
- * Open AppDelegate.m and follow the commented instructions
-
  * Click play button, cross your fingers, and pray
 
 

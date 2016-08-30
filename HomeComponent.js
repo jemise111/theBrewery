@@ -1,5 +1,6 @@
-import React, {
-	Component,
+import React, { Component } from 'react';
+
+import {
 	Image,
 	ListView,
 	StyleSheet,
@@ -27,7 +28,6 @@ export default class HomeComponent extends Component {
 				data: responseData.data,
 			});
 		})
-		.done();
 	}
 
 	goToBeerPage(beer) {
@@ -61,7 +61,7 @@ export default class HomeComponent extends Component {
 				</View>
 				<ListView
 					dataSource={this.ds.cloneWithRows(this.state.data)}
-					renderRow={(beer) => (
+					renderRow={ beer => (
 						<TouchableHighlight
 							underlayColor={'#EEE'}
 							onPress={ _ => this.goToBeerPage(beer) }
